@@ -5,3 +5,5 @@
 tags
 node_modules
 __pycache__
+reactf/public/frontend
+reactf/www/frontend.html
