@@ -235,7 +235,8 @@ app_license = "mit"
 # 	"reactf.auth.validate"
 # ]
 
-# Automatically update python controller files with type annotations for this app.
+# Automatically update python controller files with type annotations for this
+# app.
 # export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
@@ -243,4 +244,6 @@ app_license = "mit"
 # }
 
 
-website_route_rules = [{'from_route': '/frontend/<path:app_path>', 'to_route': 'frontend'},]
+website_route_rules = [
+    {"from_route": "/frontend/<path:app_path>", "to_route": "frontend"},
+]
