@@ -1,12 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { getCurrentUser } from "./utils/utils";
 function App() {
+  const [userName, setUserName] = useState("");
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    (async () => {
+      const user = await getCurrentUser();
+      setUserName(user);
+    })();
+  }, []);
 
   return (
     <div className="App">
       <div>
+        <h1>{userName}</h1>
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src="/vite.svg" className="logo" alt="Vite logo" />
