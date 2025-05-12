@@ -6,6 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "first_name",
+  "common_name",
+  "about",
   "column_break_fqzz",
   "last_name",
   "full_name"
@@ -32,11 +34,23 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Full Name"
+  },
+  {
+   "fieldname": "common_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Common Name"
+  },
+  {
+   "fieldname": "about",
+   "fieldtype": "Link",
+   "label": "about",
+   "options": "About Us Settings"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-12 07:15:49.120970",
+ "modified": "2025-05-12 08:39:18.457586",
  "modified_by": "Administrator",
  "module": "Reactf",
  "name": "Testing Doctype",
