@@ -11,6 +11,7 @@
   "is_enabled_",
   "first_name",
   "last_name",
+  "full_name",
   "column_break_gsie",
   "licence_number",
   "phone_number",
@@ -55,11 +56,18 @@
    "fieldname": "profile_image",
    "fieldtype": "Attach Image",
    "label": "Profile Image"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "options": "f\"{doc.first_name} {doc.last_name}\"",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-13 06:42:34.562422",
+ "modified": "2025-05-14 05:49:53.101186",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Driver",
@@ -82,5 +90,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "first_name"
+ "title_field": "first_name",
+ "track_changes": 1
 }
