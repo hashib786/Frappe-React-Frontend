@@ -13,7 +13,11 @@
   "column_break_rfii",
   "still_editable",
   "section_break_rmmr",
-  "items"
+  "items",
+  "section_break_agcn",
+  "rate",
+  "column_break_zphv",
+  "total_amount"
  ],
  "fields": [
   {
@@ -63,12 +67,30 @@
    "fieldtype": "Table",
    "label": "Items",
    "options": "Rental Items"
+  },
+  {
+   "fieldname": "section_break_agcn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "column_break_zphv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-16 05:44:49.029836",
+ "modified": "2025-05-16 05:54:15.818683",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Booking",
